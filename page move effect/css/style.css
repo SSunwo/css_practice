@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+#page1,
+#page2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+
+#page1 {
+    background-color: forestgreen;
+}
+
+#page2 {
+    background-color: darkorange;
+}
+
+.slide-in {
+    animation: change 2s ease forwards;
+}
+
+@keyframes change {
+    from {
+        transform: translateX(100%);
+        visibility: visible;
+    }
+
+    to {
+        transform: translateX(0%);
+        background-color: white;
+    }
+}
